@@ -1,3 +1,14 @@
+terraform {
+  required_version = ">= 1.0"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.0"
+    }
+  }
+}
+
 # 1. create aws vpc with 10.0.0.0/8 and name as thxcode-testing;
 
 resource "aws_vpc" "my_vpc" {
